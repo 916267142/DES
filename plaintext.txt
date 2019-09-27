@@ -1,0 +1,7 @@
+My name is Kang Ning.
+I'am come from China.
+Hello World.
+康宁很帅气
+for(int i = 0; i < 100; ++i) {
+	cout << "康宁真的很帅气” << endl;
+}

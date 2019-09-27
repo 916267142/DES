@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1569577617 source:c:\users\admin-test\desktop\cryptology\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"PassWord.h"
+	"Process.h"
+
+1569575431 source:c:\users\admin-test\desktop\cryptology\password.cpp
+	"PassWord.h"
+
+1569546844 c:\users\admin-test\desktop\cryptology\password.h
+	<iostream>
+
+1569577409 source:c:\users\admin-test\desktop\cryptology\process.cpp
+	"Process.h"
+
+1569576904 c:\users\admin-test\desktop\cryptology\process.h
+	"PassWord.h"
+
+1569548420 source:c:\users\administrator\desktop\cryptology\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"PassWord.h"
+	"Process.h"
+
+1569546844 c:\users\administrator\desktop\cryptology\password.h
+	<iostream>
+
+1569503853 c:\users\administrator\desktop\cryptology\process.h
+	"PassWord.h"
+
+1569546665 source:c:\users\administrator\desktop\cryptology\password.cpp
+	"PassWord.h"
+
+1569564850 source:c:\users\administrator\desktop\cryptology\process.cpp
+	"Process.h"
+
