@@ -24,16 +24,16 @@ int main()
     for(int i = 0; i < 8; ++i) {
         cin >> passWord[i];
     }
-
+    PassWord passWordSet(passWord);
+    if(pattern == 2) {  ///If you want to perform decryption, simply reverse the password
+        passWordSet.reversePwdSet();
+    }
     ifstream cin1(inputName);
     ofstream cout1(outputName);
     Process process;   ///Read in without filtering whitespace or enter
-    for(int counter = 1; cin1 >> noskipws >> plaintext[counter - 1];) {
+    int counter;
+    for(counter = 1; cin1 >> noskipws >> plaintext[counter - 1];) {
         if(counter == 8) {
-            PassWord passWordSet(passWord);
-            if(pattern == 2) {  ///If you want to perform decryption, simply reverse the password
-                passWordSet.reversePwdSet();
-            }
             process.encryption(plaintext, chipertext, passWordSet);
             for(int i = 0; i < 8; ++i) {
                 cout1 << chipertext[i];
@@ -41,6 +41,15 @@ int main()
             counter = 1;
         } else {
             counter++;
+        }
+    }
+    if(pattern == 1 && counter != 1) {
+        for(int i = counter - 1; i < 8; ++i) {
+            plaintext[i] = ' ';
+        }
+        process.encryption(plaintext, chipertext, passWordSet);
+        for(int i = 0; i < 8; ++i) {
+            cout1 << chipertext[i];
         }
     }
     cin1.close();
@@ -67,5 +76,3 @@ plaintext2.txt
 2
 qwer1234
 */
-
-
